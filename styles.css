@@ -880,3 +880,33 @@ input:focus,textarea:focus{border-color: rgba(34,211,238,0.55); box-shadow: 0 0 
   height: auto;
   display: block;
 }
+
+/* ---- Mobile fixes (phones / small tablets only) ---- */
+@media (max-width: 720px){
+  .exp-ui-grid > *, .arch-grid > *, .loggrid > *, .hero-grid > *, .cards-3 > *{min-width:0}
+  .exp-ui-grid{overflow:hidden}
+  .exp-ui-grid .panel, .chart-wrap-embed{padding:14px}
+  .chart-head{flex-wrap:wrap; gap:8px}
+  .logbox, .codeblock pre{overflow:auto; max-width:100%}
+  .codeblock pre{white-space:pre-wrap; word-break:break-word}
+  .hero{padding:36px 0 24px}
+  .hero-copy h1{font-size:32px}
+  .hero-metrics{grid-template-columns:1fr; gap:10px}
+  .metric{padding:12px 14px}
+  .metric-num{font-size:19px}
+  .profile{flex-wrap:wrap}
+  .scroll-hint{display:none}
+  .timeline{gap:14px}
+  .t-item{grid-template-columns:1fr; gap:0}
+  .t-dotline{display:none}
+  .t-top{flex-direction:column; align-items:flex-start; gap:8px}
+  .t-top .pill{max-width:100%; white-space:normal}
+  .ticks.compact li, .ticks li{overflow-wrap:anywhere}
+  ul.spec{list-style:none; padding:0; margin:0}
+  ul.spec li{padding:9px 0; border-top:1px solid rgba(255,255,255,0.10); overflow-wrap:anywhere}
+  ul.spec li:first-child{border-top:0}
+  ul.spec li span{display:block; font-weight:700; font-size:13px; color:var(--text); margin-bottom:2px}
+  .section{padding-top:48px; padding-bottom:48px}
+  .project-portfolio-head{flex-direction:column; align-items:flex-start}
+  .glass{padding:16px}
+}
